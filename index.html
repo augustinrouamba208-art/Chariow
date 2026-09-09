@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Une vitrine digitale premium pour découvrir une sélection de ressources et accéder à notre boutique.">
+<title>CHARIOW+ — Votre espace digital</title>
+<style>
+:root{--bg:#fcfaf8;--ink:#171513;--muted:#706963;--accent:#d8875d;--soft:#f4e0d4;--dark:#201c19;--line:#ece3de;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(252,250,248,.9);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:21px;font-weight:950;letter-spacing:-.06em}.logo span{color:var(--accent)}.navlinks{display:flex;gap:26px;font-size:14px;color:#5f5955}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:999px;font-weight:850;font-size:14px;transition:.2s}.btn:hover{transform:translateY(-2px)}.dark{background:var(--dark);color:#fff}.outline{border:1px solid #ddd2ca;background:#fff}
+.hero{padding:92px 0 80px}.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}.eyebrow,.kicker{font-size:11px;font-weight:950;letter-spacing:.13em;text-transform:uppercase;color:#a65f3d}.eyebrow{display:inline-block;padding:8px 12px;background:var(--soft);border-radius:999px}.hero h1{font-size:clamp(44px,7vw,76px);line-height:.98;letter-spacing:-.06em;margin:18px 0}.hero h1 span{color:var(--accent)}.hero p{font-size:19px;color:var(--muted);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.trust{display:flex;gap:20px;flex-wrap:wrap;color:#777;font-size:13px;margin-top:22px}.trust b{color:#26221f}
+.visual{min-height:450px;border-radius:36px;background:radial-gradient(circle at 25% 20%,#fff 0 20%,transparent 45%),linear-gradient(145deg,#f3d2bf,#fff);border:1px solid #ead7cb;position:relative;overflow:hidden;box-shadow:0 25px 70px rgba(72,42,23,.12)}.orb{position:absolute;width:230px;height:230px;border-radius:50%;background:#e7ae8f;filter:blur(2px);right:-60px;top:-55px;opacity:.55}.panel{position:absolute;left:14%;top:16%;width:72%;height:68%;background:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.95);border-radius:28px;padding:28px;box-shadow:0 20px 50px rgba(70,40,20,.1);display:flex;flex-direction:column;justify-content:space-between}.panel small{font-weight:900;color:#9b6044}.panel h2{font-size:36px;line-height:1.03;letter-spacing:-.05em;margin:10px 0}.line{height:9px;border-radius:20px;background:#eaded7;width:85%;margin:9px 0}.line.short{width:58%}.badge{display:inline-block;background:#211d1a;color:#fff;border-radius:999px;padding:9px 13px;font-size:11px;font-weight:800;width:max-content}
+section{padding:78px 0}.center{text-align:center}.title{font-size:clamp(31px,4vw,50px);letter-spacing:-.045em;line-height:1.04;margin:10px 0 14px}.lead{color:var(--muted);max-width:670px;margin:0 auto 38px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:27px;box-shadow:0 10px 30px rgba(0,0,0,.035)}.num{font-size:12px;font-weight:900;color:var(--accent)}.card h3{font-size:20px;margin:15px 0 8px}.card p{color:var(--muted);font-size:14px}
+.band{background:var(--dark);color:#fff;border-radius:34px;padding:55px}.bandGrid{display:grid;grid-template-columns:1.3fr .7fr;gap:35px;align-items:center}.band p{color:#c7c0bb}.points{display:grid;gap:11px;margin:23px 0}.points div:before{content:"✓";color:#efb08e;font-weight:900;margin-right:10px}.bigArrow{text-align:right;font-size:90px;line-height:1;color:#efb08e;opacity:.8}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:27px;border-top:2px solid var(--accent)}.step strong{font-size:13px;color:var(--accent)}.step h3{margin:10px 0}.step p{color:var(--muted);font-size:14px}
+.faq{max-width:800px;margin:auto}.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 20px;margin:10px 0}.faq summary{cursor:pointer;font-weight:800}.faq p{color:var(--muted);font-size:14px}
+.cta{padding:65px 0 90px}.ctaBox{border:1px solid #ead7cb;background:linear-gradient(135deg,#f3d2bf,#fff);border-radius:32px;text-align:center;padding:60px 25px}.ctaBox p{max-width:600px;margin:0 auto 25px;color:#6d645e}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#777;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.navlinks{display:none}.hero{padding:60px 0}.heroGrid,.bandGrid{grid-template-columns:1fr}.visual{min-height:370px}.cards,.steps{grid-template-columns:1fr}.band{padding:32px}.bigArrow{text-align:left;font-size:65px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="logo" href="#">CHARIOW<span>+</span></a><div class="navlinks"><a href="#univers">L'univers</a><a href="#fonctionnement">Comment ça marche</a><a href="#faq">FAQ</a></div><a class="btn dark" href="https://zfjalkqj.mychariow.co" target="_blank" rel="noopener">Visiter la boutique</a></div></nav>
+
+<main>
+<section class="hero"><div class="wrap heroGrid"><div>
+<span class="eyebrow">Votre espace de ressources digitales</span>
+<h1>Des idées qui deviennent <span>des résultats.</span></h1>
+<p>Bienvenue dans un espace pensé pour celles et ceux qui veulent apprendre, créer et développer leurs projets grâce à des ressources digitales pratiques et accessibles.</p>
+<div class="actions"><a class="btn dark" href="https://zfjalkqj.mychariow.co" target="_blank" rel="noopener">Découvrir la boutique →</a><a class="btn outline" href="#univers">En savoir plus</a></div>
+<div class="trust"><span>✓ <b>Ressources digitales</b></span><span>✓ <b>Accès simple</b></span><span>✓ <b>100 % en ligne</b></span></div>
+</div><div class="visual"><div class="orb"></div><div class="panel"><div><small>CHARIOW+ / DIGITAL</small><h2>Apprendre.<br>Créer.<br>Avancer.</h2><div class="line"></div><div class="line short"></div></div><span class="badge">EXPLOREZ LA BOUTIQUE →</span></div></div></div></section>
+
+<section id="univers"><div class="wrap center"><div class="kicker">Notre univers</div><h2 class="title">Une expérience simple, claire et utile.</h2><p class="lead">Notre objectif : te permettre de trouver rapidement des ressources digitales conçues pour t'aider à passer de l'idée à l'action.</p>
+<div class="cards">
+<article class="card"><div class="num">01 — APPRENDRE</div><h3>Des contenus structurés</h3><p>Des ressources conçues pour expliquer les méthodes de façon claire, progressive et pratique.</p></article>
+<article class="card"><div class="num">02 — CRÉER</div><h3>Des outils pour agir</h3><p>Des ressources pensées pour t'aider à produire, organiser et améliorer tes projets.</p></article>
+<article class="card"><div class="num">03 — DÉVELOPPER</div><h3>Passer à l'action</h3><p>Des approches concrètes pour transformer les connaissances acquises en actions utiles.</p></article>
+</div></div></section>
+
+<section><div class="wrap"><div class="band"><div class="bandGrid"><div><div class="kicker">Une seule destination</div><h2 class="title" style="color:#fff">Découvre toutes les ressources disponibles.</h2><p>La présentation, les informations détaillées, les offres et l'accès aux produits sont directement disponibles dans notre boutique.</p><div class="points"><div>Découvre les ressources actuellement disponibles</div><div>Consulte les détails de chaque offre</div><div>Choisis ce qui correspond à ton objectif</div></div><a class="btn" style="background:#fff;color:#201c19" href="https://zfjalkqj.mychariow.co" target="_blank" rel="noopener">Ouvrir la boutique →</a></div><div class="bigArrow">↗</div></div></div></div></section>
+
+<section id="fonctionnement"><div class="wrap center"><div class="kicker">Comment ça marche</div><h2 class="title">En trois étapes.</h2><p class="lead">Pas besoin de chercher partout : tout commence ici.</p><div class="steps">
+<div class="step"><strong>ÉTAPE 01</strong><h3>Entre dans la boutique</h3><p>Clique sur un bouton et accède directement à notre espace Chariow.</p></div>
+<div class="step"><strong>ÉTAPE 02</strong><h3>Explore les offres</h3><p>Parcours les ressources disponibles et consulte les informations de chaque offre.</p></div>
+<div class="step"><strong>ÉTAPE 03</strong><h3>Choisis et commence</h3><p>Sélectionne la ressource qui te convient et suis les instructions indiquées.</p></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap"><div class="center"><div class="kicker">FAQ</div><h2 class="title">Questions fréquentes</h2></div><div class="faq">
+<details><summary>Où sont les produits ?</summary><p>Les produits ne sont volontairement pas affichés sur cette vitrine. Pour voir les offres disponibles, utilise le bouton « Visiter la boutique » qui ouvre directement notre boutique Chariow.</p></details>
+<details><summary>Pourquoi passer par la boutique ?</summary><p>La boutique centralise les informations sur les offres, les prix et les modalités d'accès. Cela permet de garder cette page simple et rapide.</p></details>
+<details><summary>Est-ce que je peux accéder depuis mon téléphone ?</summary><p>Oui. La vitrine et la boutique sont accessibles depuis un smartphone, une tablette ou un ordinateur.</p></details>
+</div></div></section>
+
+<section class="cta"><div class="wrap"><div class="ctaBox"><div class="kicker">Prêt à découvrir ?</div><h2 class="title">Ton prochain projet commence ici.</h2><p>Explore notre boutique et découvre les ressources digitales actuellement disponibles.</p><a class="btn dark" href="https://zfjalkqj.mychariow.co" target="_blank" rel="noopener">Accéder à Chariow →</a></div></div></section>
+</main>
+
+<footer><div class="wrap foot"><span>© 2026 CHARIOW+ — Vitrine digitale</span><a href="https://zfjalkqj.mychariow.co" target="_blank" rel="noopener">Ouvrir la boutique</a></div></footer>
+</body>
+</html>
